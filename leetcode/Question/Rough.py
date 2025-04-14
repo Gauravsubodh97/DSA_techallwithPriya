@@ -1,13 +1,15 @@
-a = 'Hello World'
-print(a[5])
-
-name = 'icecreame'
-age = 21
-color ='white'
-
-print(f"My name is {name} , and my age is {age} and my colore is {color}")
-print("my name is %s , my age is %s my colore is %s" %(name,age,color))
-print("my name is {} my age is {} my colore is {}".format(name,color,age))
-
-
-
+def longstSubStr(str):
+    st =0
+    m =0
+    d ={}
+    for i ,v in enumerate(str):
+        if v in d and st <=d[v]:
+            st = d[v] +1
+        else:
+            m = max(m,i-st +1)
+        d[v] =i
+    return m
+#driver code
+str = 'au'
+result = longstSubStr(str)
+print(result)
