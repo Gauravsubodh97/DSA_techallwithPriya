@@ -1,3 +1,10 @@
+#Features of list:
+
+#it can have duplicate values.
+#it can be mutable.
+#it can a multiple data types.
+
+
 from loguru import logger
 
 labour = ['Ramesh', 'Suresh', 'Bunty', 'Sonty']
