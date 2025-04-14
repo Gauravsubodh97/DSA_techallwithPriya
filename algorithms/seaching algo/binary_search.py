@@ -1,6 +1,4 @@
 def binarysea(arr,i,j,x):
-
-
     if j >=i:
         mid = i + (j - i) // 2
 
